@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Barlow:wght@400;500;600;700&family=Barlow+Semi+Condensed:wght@500;600;700&family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<meta name="design_doc_mode" content="canvas">
+<style>
+  body { margin: 0; background: #0c0e13; }
+  * { box-sizing: border-box; }
+  a { color: #b6f24a; }
+  a:hover { color: #cdff6e; }
+  ::-webkit-scrollbar { height: 8px; width: 8px; }
+  ::-webkit-scrollbar-thumb { background: #2a2f3a; border-radius: 8px; }
+</style>
+</helmet>
+
+<div style="display:flex; flex-wrap:wrap; gap:80px; padding:72px; font-family:'Barlow',sans-serif; align-items:flex-start; background:#0c0e13;">
+<div style="display:contents; --accent:{{accent}}; --pad:{{pad}}; --glow:{{glow}};">
+
+  <!-- ============ DIRECTION A : SLATE + LIME ============ -->
+  <section id="1a" style="display:flex; flex-direction:column; gap:28px;">
+    <div style="display:flex; align-items:center; gap:14px;">
+      <span style="background:var(--accent); color:#0c0e13; font-family:'Oswald'; font-weight:700; font-size:15px; letter-spacing:1px; padding:5px 12px; border-radius:5px;">1A</span>
+      <span style="color:#8a93a6; font-family:'Oswald'; font-weight:500; letter-spacing:3px; font-size:14px; text-transform:uppercase;">Slate · Lime — "Iron Ledger"</span>
+    </div>
+
+    <!-- SCREEN 1 : WEEKLY LOG -->
+    <div style="width:1180px; background:#12151c; border:1px solid #232834; border-radius:16px; overflow:hidden; box-shadow:0 30px 80px -20px rgba(0,0,0,.6); display:flex;">
+      <!-- Sidebar -->
+      <aside style="width:210px; background:#0e1117; border-right:1px solid #232834; padding:22px 0; flex-shrink:0;">
+        <div style="padding:0 20px 20px; border-bottom:1px solid #1c212b;">
+          <div style="font-family:'Oswald'; font-weight:700; font-size:22px; color:#f4f6fa; letter-spacing:.5px; line-height:1;">IRON<span style="color:var(--accent);">LEDGER</span></div>
+          <div style="color:#5f6878; font-size:11px; margin-top:5px; font-family:'Oswald'; letter-spacing:2.5px;">TRAINING SYSTEM</div>
+        </div>
+        <nav style="padding:16px 12px; display:flex; flex-direction:column; gap:3px;">
+          <div style="color:#5f6878; font-size:10.5px; letter-spacing:2px; font-family:'Oswald'; font-weight:600; padding:10px 10px 6px;">WORKOUT</div>
+          <div style="display:flex; align-items:center; gap:10px; padding:9px 12px; border-radius:7px; background:color-mix(in srgb, var(--accent) 16%, #0e1117); color:var(--accent); font-weight:600; font-size:13.5px; border-left:2px solid var(--accent);">Weekly Planner</div>
+          <div style="display:flex; align-items:center; gap:10px; padding:9px 12px; border-radius:7px; color:#aab2c2; font-size:13.5px;">Log Entry</div>
+          <div style="display:flex; align-items:center; gap:10px; padding:9px 12px; border-radius:7px; color:#aab2c2; font-size:13.5px;">Calendar</div>
+          <div style="display:flex; align-items:center; gap:10px; padding:9px 12px; border-radius:7px; color:#aab2c2; font-size:13.5px;">Dashboard</div>
+          <div style="color:#5f6878; font-size:10.5px; letter-spacing:2px; font-family:'Oswald'; font-weight:600; padding:16px 10px 6px;">BUILDER</div>
+          <div style="display:flex; align-items:center; gap:10px; padding:9px 12px; border-radius:7px; color:#aab2c2; font-size:13.5px;">Program Builder</div>
+          <div style="display:flex; align-items:center; gap:10px; padding:9px 12px; border-radius:7px; color:#aab2c2; font-size:13.5px;">Exercise Library</div>
+          <div style="color:#5f6878; font-size:10.5px; letter-spacing:2px; font-family:'Oswald'; font-weight:600; padding:16px 10px 6px;">CLIENT</div>
+          <div style="display:flex; align-items:center; gap:10px; padding:9px 12px; border-radius:7px; color:#aab2c2; font-size:13.5px;">Measurements</div>
+          <div style="display:flex; align-items:center; gap:10px; padding:9px 12px; border-radius:7px; color:#aab2c2; font-size:13.5px;">Progress Photos</div>
+        </nav>
+      </aside>
+
+      <!-- Main -->
+      <div style="flex:1; padding:26px 28px; min-width:0;">
+        <!-- Header -->
+        <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:22px;">
+          <div>
+            <div style="color:var(--accent); font-family:'Oswald'; font-weight:600; letter-spacing:3px; font-size:12px;">PUSH · PULL · LEGS — MESOCYCLE 2</div>
+            <div style="font-family:'Oswald'; font-weight:700; font-size:40px; color:#f4f6fa; line-height:1; margin-top:4px;">WEEK 1 <span style="color:#5f6878; font-weight:400; font-size:22px;">/ 6</span></div>
+          </div>
+          <div style="text-align:right;">
+            <div style="color:#8a93a6; font-size:12px; letter-spacing:1px; font-family:'Oswald';">CLIENT · MARCUS T.</div>
+            <div style="color:#f4f6fa; font-family:'Oswald'; font-weight:500; font-size:16px; margin-top:2px;">Mon, Mar 30 → Apr 5</div>
+          </div>
+        </div>
+
+        <!-- Stat strip -->
+        <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:20px;">
+          <div style="background:#0e1117; border:1px solid #232834; border-radius:10px; padding:14px 16px;">
+            <div style="color:#5f6878; font-size:10.5px; letter-spacing:1.5px; font-family:'Oswald'; font-weight:600;">TRAINING DAYS</div>
+            <div style="font-family:'Oswald'; font-weight:700; font-size:30px; color:#f4f6fa; line-height:1.1;">6 <span style="color:#5f6878; font-size:15px; font-weight:400;">/ 7</span></div>
+          </div>
+          <div style="background:#0e1117; border:1px solid #232834; border-radius:10px; padding:14px 16px;">
+            <div style="color:#5f6878; font-size:10.5px; letter-spacing:1.5px; font-family:'Oswald'; font-weight:600;">SESSIONS DONE</div>
+            <div style="font-family:'Oswald'; font-weight:700; font-size:30px; color:var(--accent); line-height:1.1;">4 <span style="color:#5f6878; font-size:15px; font-weight:400;">/ 6</span></div>
+          </div>
+          <div style="background:#0e1117; border:1px solid #232834; border-radius:10px; padding:14px 16px;">
+            <div style="color:#5f6878; font-size:10.5px; letter-spacing:1.5px; font-family:'Oswald'; font-weight:600;">WEEKLY VOLUME</div>
+            <div style="font-family:'Oswald'; font-weight:700; font-size:30px; color:#f4f6fa; line-height:1.1;">42.6k <span style="color:#5f6878; font-size:15px; font-weight:400;">lbs</span></div>
+          </div>
+          <div style="background:#0e1117; border:1px solid #232834; border-radius:10px; padding:14px 16px;">
+            <div style="color:#5f6878; font-size:10.5px; letter-spacing:1.5px; font-family:'Oswald'; font-weight:600;">COMPLETION</div>
+            <div style="display:flex; align-items:baseline; gap:8px;">
+              <div style="font-family:'Oswald'; font-weight:700; font-size:30px; color:#f4f6fa; line-height:1.1;">67%</div>
+              <div style="flex:1; height:6px; background:#1c212b; border-radius:4px; overflow:hidden;"><div style="width:67%; height:100%; background:var(--accent); box-shadow:var(--glow);"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Today session label -->
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+          <div style="display:flex; align-items:center; gap:12px;">
+            <span style="font-family:'Oswald'; font-weight:600; font-size:16px; color:#f4f6fa; letter-spacing:1px;">TODAY — PULL A</span>
+            <span style="background:color-mix(in srgb, var(--accent) 16%, #0e1117); color:var(--accent); font-size:11px; font-weight:600; padding:3px 9px; border-radius:20px; font-family:'Oswald'; letter-spacing:1px;">BACK · BICEPS</span>
+          </div>
+          <span style="color:#5f6878; font-size:12px; font-family:'IBM Plex Mono';">Est. 58 min · RPE cap 9</span>
+        </div>
+
+        <!-- Exercise grid -->
+        <div style="border:1px solid #232834; border-radius:10px; overflow:hidden;">
+          <div style="display:grid; grid-template-columns:2.4fr .9fr .8fr .9fr .8fr .7fr; background:#0e1117; border-bottom:1px solid #232834;">
+            <div style="padding:10px 16px; color:#8a93a6; font-family:'Oswald'; font-weight:600; font-size:11px; letter-spacing:1.5px;">EXERCISE</div>
+            <div style="padding:10px 12px; color:#8a93a6; font-family:'Oswald'; font-weight:600; font-size:11px; letter-spacing:1.5px; text-align:center;">WEIGHT</div>
+            <div style="padding:10px 12px; color:#8a93a6; font-family:'Oswald'; font-weight:600; font-size:11px; letter-spacing:1.5px; text-align:center;">SETS</div>
+            <div style="padding:10px 12px; color:#8a93a6; font-family:'Oswald'; font-weight:600; font-size:11px; letter-spacing:1.5px; text-align:center;">REPS</div>
+            <div style="padding:10px 12px; color:#8a93a6; font-family:'Oswald'; font-weight:600; font-size:11px; letter-spacing:1.5px; text-align:center;">RPE</div>
+            <div style="padding:10px 12px; color:#8a93a6; font-family:'Oswald'; font-weight:600; font-size:11px; letter-spacing:1.5px; text-align:center;">✓</div>
+          </div>
+          <sc-for list="{{ exercises }}" as="ex" hint-placeholder-count="6">
+            <div style="display:grid; grid-template-columns:2.4fr .9fr .8fr .9fr .8fr .7fr; border-bottom:1px solid #1a1f28; align-items:center;">
+              <div style="padding:calc(11px*var(--pad)) 16px; display:flex; flex-direction:column;">
+                <span style="color:#eef1f6; font-weight:600; font-size:14px;">{{ ex.name }}</span>
+                <span style="color:#5f6878; font-size:11px; font-family:'IBM Plex Mono';">{{ ex.target }}</span>
+              </div>
+              <div style="padding:calc(11px*var(--pad)) 12px; text-align:center; font-family:'IBM Plex Mono'; color:#dfe4ee; font-size:14px; font-weight:500;">{{ ex.weight }}</div>
+              <div style="padding:calc(11px*var(--pad)) 12px; text-align:center; font-family:'IBM Plex Mono'; color:#dfe4ee; font-size:14px;">{{ ex.sets }}</div>
+              <div style="padding:calc(11px*var(--pad)) 12px; text-align:center; font-family:'IBM Plex Mono'; color:#dfe4ee; font-size:14px;">{{ ex.reps }}</div>
+              <div style="padding:calc(11px*var(--pad)) 12px; text-align:center; font-family:'IBM Plex Mono'; color:var(--accent); font-size:14px;">{{ ex.rpe }}</div>
+              <div style="padding:calc(11px*var(--pad)) 12px; display:flex; justify-content:center;">
+                <sc-if value="{{ ex.done }}" hint-placeholder-val="{{ true }}">
+                  <span style="width:20px; height:20px; border-radius:5px; background:var(--accent); box-shadow:var(--glow); color:#0c0e13; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:700;">✓</span>
+                </sc-if>
+                <sc-if value="{{ ex.notDone }}" hint-placeholder-val="{{ true }}">
+                  <span style="width:20px; height:20px; border-radius:5px; border:1.5px solid #2f3542; background:#0e1117;"></span>
+                </sc-if>
+              </div>
+            </div>
+          </sc-for>
+          <div style="display:flex; align-items:center; gap:8px; padding:calc(11px*var(--pad)) 16px; color:#5f6878; font-size:13px; background:#0e1117;">
+            <span style="width:18px; height:18px; border-radius:5px; border:1.5px dashed #2f3542; display:flex; align-items:center; justify-content:center; font-size:13px;">+</span>
+            Add exercise
+          </div>
+        </div>
+
+        <!-- Bottom row: weight + daily progress -->
+        <div style="display:grid; grid-template-columns:1fr 1.4fr; gap:14px; margin-top:18px;">
+          <div style="background:#0e1117; border:1px solid #232834; border-radius:10px; padding:16px;">
+            <div style="color:#8a93a6; font-family:'Oswald'; font-weight:600; font-size:11px; letter-spacing:1.5px; margin-bottom:12px;">BODYWEIGHT</div>
+            <div style="display:flex; align-items:flex-end; gap:16px;">
+              <div><div style="color:#5f6878; font-size:11px;">Current</div><div style="font-family:'Oswald'; font-weight:700; font-size:28px; color:#f4f6fa; line-height:1;">183.5</div></div>
+              <div><div style="color:#5f6878; font-size:11px;">Target</div><div style="font-family:'Oswald'; font-weight:700; font-size:28px; color:var(--accent); line-height:1;">170</div></div>
+              <div style="margin-left:auto; text-align:right;"><div style="color:#5f6878; font-size:11px;">7-day</div><div style="font-family:'Oswald'; font-weight:600; font-size:16px; color:#8fe63e; line-height:1;">▼ 1.2</div></div>
+            </div>
+          </div>
+          <div style="background:#0e1117; border:1px solid #232834; border-radius:10px; padding:16px;">
+            <div style="color:#8a93a6; font-family:'Oswald'; font-weight:600; font-size:11px; letter-spacing:1.5px; margin-bottom:12px;">DAILY PROGRESS</div>
+            <div style="display:flex; align-items:flex-end; gap:14px; height:74px;">
+              <sc-for list="{{ days }}" as="d" hint-placeholder-count="6">
+                <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:6px; justify-content:flex-end; height:100%;">
+                  <div style="width:100%; background:#1c212b; border-radius:4px; display:flex; align-items:flex-end; overflow:hidden; height:52px;">
+                    <div style="width:100%; background:var(--accent); box-shadow:var(--glow); border-radius:4px 4px 0 0; height:{{ d.h }};"></div>
+                  </div>
+                  <span style="color:#5f6878; font-size:10px; font-family:'Oswald'; letter-spacing:1px;">{{ d.label }}</span>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCREEN 2 : PROGRESS DASHBOARD (A) -->
+    <div style="width:1180px; background:#12151c; border:1px solid #232834; border-radius:16px; padding:26px 28px; box-shadow:0 30px 80px -20px rgba(0,0,0,.6);">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+        <div style="font-family:'Oswald'; font-weight:700; font-size:26px; color:#f4f6fa; letter-spacing:.5px;">PROGRESS DASHBOARD</div>
+        <div style="display:flex; gap:6px;">
+          <span style="background:color-mix(in srgb, var(--accent) 16%, #0e1117); color:var(--accent); font-size:11px; font-weight:600; padding:5px 12px; border-radius:6px; font-family:'Oswald'; letter-spacing:1px;">8 WEEKS</span>
+          <span style="background:#0e1117; color:#8a93a6; font-size:11px; font-weight:600; padding:5px 12px; border-radius:6px; font-family:'Oswald'; letter-spacing:1px; border:1px solid #232834;">12 WEEKS</span>
+          <span style="background:#0e1117; color:#8a93a6; font-size:11px; font-weight:600; padding:5px 12px; border-radius:6px; font-family:'Oswald'; letter-spacing:1px; border:1px solid #232834;">ALL</span>
+        </div>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:16px;">
+        <div style="background:#0e1117; border:1px solid #232834; border-radius:10px; padding:16px;"><div style="color:#5f6878; font-size:10.5px; letter-spacing:1.5px; font-family:'Oswald'; font-weight:600;">TOTAL VOLUME</div><div style="font-family:'Oswald'; font-weight:700; font-size:32px; color:#f4f6fa;">318k</div><div style="color:#8fe63e; font-size:12px; font-weight:600;">▲ 14% vs last block</div></div>
+        <div style="background:#0e1117; border:1px solid #232834; border-radius:10px; padding:16px;"><div style="color:#5f6878; font-size:10.5px; letter-spacing:1.5px; font-family:'Oswald'; font-weight:600;">SESSIONS</div><div style="font-family:'Oswald'; font-weight:700; font-size:32px; color:#f4f6fa;">41</div><div style="color:#8fe63e; font-size:12px; font-weight:600;">92% adherence</div></div>
+        <div style="background:#0e1117; border:1px solid #232834; border-radius:10px; padding:16px;"><div style="color:#5f6878; font-size:10.5px; letter-spacing:1.5px; font-family:'Oswald'; font-weight:600;">EST. 1RM · BENCH</div><div style="font-family:'Oswald'; font-weight:700; font-size:32px; color:var(--accent);">245</div><div style="color:#8fe63e; font-size:12px; font-weight:600;">▲ 20 lbs</div></div>
+        <div style="background:#0e1117; border:1px solid #232834; border-radius:10px; padding:16px;"><div style="color:#5f6878; font-size:10.5px; letter-spacing:1.5px; font-family:'Oswald'; font-weight:600;">BODYWEIGHT</div><div style="font-family:'Oswald'; font-weight:700; font-size:32px; color:#f4f6fa;">183.5</div><div style="color:#8fe63e; font-size:12px; font-weight:600;">▼ 9.5 lbs</div></div>
+      </div>
+      <div style="display:grid; grid-template-columns:1.6fr 1fr; gap:14px;">
+        <div style="background:#0e1117; border:1px solid #232834; border-radius:10px; padding:18px;">
+          <div style="color:#8a93a6; font-family:'Oswald'; font-weight:600; font-size:11px; letter-spacing:1.5px; margin-bottom:16px;">WEEKLY TRAINING VOLUME (LBS)</div>
+          <div style="display:flex; align-items:flex-end; gap:12px; height:150px;">
+            <sc-for list="{{ volume }}" as="v" hint-placeholder-count="8">
+              <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:8px; justify-content:flex-end; height:100%;">
+                <div style="width:100%; background:{{ v.shade }}; box-shadow:var(--glow); border-radius:5px 5px 0 0; height:{{ v.h }};"></div>
+                <span style="color:#5f6878; font-size:10px; font-family:'Oswald'; letter-spacing:.5px;">{{ v.label }}</span>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+        <div style="background:#0e1117; border:1px solid #232834; border-radius:10px; padding:18px;">
+          <div style="color:#8a93a6; font-family:'Oswald'; font-weight:600; font-size:11px; letter-spacing:1.5px; margin-bottom:14px;">TOP LIFTS — EST. 1RM</div>
+          <sc-for list="{{ lifts }}" as="l" hint-placeholder-count="4">
+            <div style="margin-bottom:14px;">
+              <div style="display:flex; justify-content:space-between; margin-bottom:6px;"><span style="color:#dfe4ee; font-size:13px; font-weight:600;">{{ l.name }}</span><span style="font-family:'IBM Plex Mono'; color:var(--accent); font-size:13px;">{{ l.val }}</span></div>
+              <div style="height:7px; background:#1c212b; border-radius:4px; overflow:hidden;"><div style="height:100%; background:var(--accent); box-shadow:var(--glow); width:{{ l.pct }};"></div></div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCREEN 3 : LOG ENTRY -->
+    <div data-screen-label="Log Entry" style="width:1180px; background:#12151c; border:1px solid #232834; border-radius:16px; padding:26px 28px; box-shadow:0 30px 80px -20px rgba(0,0,0,.6);">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:22px;">
+        <div>
+          <div style="color:var(--accent); font-family:'Oswald'; font-weight:600; letter-spacing:3px; font-size:12px;">LOG ENTRY · PULL A · EX 2 / 7</div>
+          <div style="font-family:'Oswald'; font-weight:700; font-size:34px; color:#f4f6fa; line-height:1; margin-top:4px;">BARBELL BENCH PRESS</div>
+          <div style="color:#8a93a6; font-size:13px; margin-top:6px; font-family:'IBM Plex Mono';">Chest · Barbell — target 4 × 8 @ RPE 8</div>
+        </div>
+        <div style="display:flex; gap:8px;">
+          <span style="background:#0e1117; border:1px solid #232834; color:#aab2c2; font-size:12px; padding:8px 14px; border-radius:8px; font-family:'Oswald'; letter-spacing:1px;">◀ PREV</span>
+          <span style="background:color-mix(in srgb, var(--accent) 16%, #0e1117); color:var(--accent); font-size:12px; padding:8px 14px; border-radius:8px; font-family:'Oswald'; letter-spacing:1px;">NEXT ▶</span>
+        </div>
+      </div>
+
+      <div style="display:grid; grid-template-columns:1.9fr 1fr; gap:14px;">
+        <!-- Set table -->
+        <div style="border:1px solid #232834; border-radius:10px; overflow:hidden;">
+          <div style="display:grid; grid-template-columns:.7fr 1fr 1fr .9fr .8fr .6fr; background:#0e1117; border-bottom:1px solid #232834;">
+            <div style="padding:10px 14px; color:#8a93a6; font-family:'Oswald'; font-weight:600; font-size:11px; letter-spacing:1.5px;">SET</div>
+            <div style="padding:10px 12px; color:#8a93a6; font-family:'Oswald'; font-weight:600; font-size:11px; letter-spacing:1.5px;">PREV</div>
+            <div style="padding:10px 12px; color:#8a93a6; font-family:'Oswald'; font-weight:600; font-size:11px; letter-spacing:1.5px; text-align:center;">WEIGHT</div>
+            <div style="padding:10px 12px; color:#8a93a6; font-family:'Oswald'; font-weight:600; font-size:11px; letter-spacing:1.5px; text-align:center;">REPS</div>
+            <div style="padding:10px 12px; color:#8a93a6; font-family:'Oswald'; font-weight:600; font-size:11px; letter-spacing:1.5px; text-align:center;">RPE</div>
+            <div style="padding:10px 12px; color:#8a93a6; font-family:'Oswald'; font-weight:600; font-size:11px; letter-spacing:1.5px; text-align:center;">✓</div>
+          </div>
+          <sc-for list="{{ setRows }}" as="s" hint-placeholder-count="6">
+            <div style="display:grid; grid-template-columns:.7fr 1fr 1fr .9fr .8fr .6fr; border-bottom:1px solid #1a1f28; align-items:center;">
+              <div style="padding:calc(12px*var(--pad)) 14px; display:flex; align-items:center; gap:7px;">
+                <sc-if value="{{ s.warm }}" hint-placeholder-val="{{ true }}">
+                  <span style="color:#8a93a6; font-family:'IBM Plex Mono'; font-size:13px; font-weight:500;">{{ s.set }}</span>
+                </sc-if>
+                <sc-if value="{{ s.working }}" hint-placeholder-val="{{ true }}">
+                  <span style="width:22px; height:22px; border-radius:6px; background:color-mix(in srgb, var(--accent) 16%, #0e1117); color:var(--accent); font-family:'Oswald'; font-weight:700; font-size:13px; display:flex; align-items:center; justify-content:center;">{{ s.set }}</span>
+                </sc-if>
+              </div>
+              <div style="padding:calc(12px*var(--pad)) 12px; color:#5f6878; font-family:'IBM Plex Mono'; font-size:13px;">{{ s.prev }}</div>
+              <div style="padding:calc(12px*var(--pad)) 8px; text-align:center;"><span style="display:inline-block; min-width:64px; background:#0e1117; border:1px solid #2a303c; border-radius:7px; padding:6px 0; font-family:'IBM Plex Mono'; color:#eef1f6; font-size:14px; font-weight:600;">{{ s.weight }}</span></div>
+              <div style="padding:calc(12px*var(--pad)) 8px; text-align:center;"><span style="display:inline-block; min-width:48px; background:#0e1117; border:1px solid #2a303c; border-radius:7px; padding:6px 0; font-family:'IBM Plex Mono'; color:#eef1f6; font-size:14px; font-weight:600;">{{ s.reps }}</span></div>
+              <div style="padding:calc(12px*var(--pad)) 12px; text-align:center; font-family:'IBM Plex Mono'; color:var(--accent); font-size:14px;">{{ s.rpe }}</div>
+              <div style="padding:calc(12px*var(--pad)) 12px; display:flex; justify-content:center;">
+                <sc-if value="{{ s.done }}" hint-placeholder-val="{{ true }}">
+                  <span style="width:22px; height:22px; border-radius:6px; background:var(--accent); box-shadow:var(--glow); color:#0c0e13; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:700;">✓</span>
+                </sc-if>
+                <sc-if value="{{ s.pending }}" hint-placeholder-val="{{ true }}">
+                  <span style="width:22px; height:22px; border-radius:6px; border:1.5px solid #2f3542; background:#0e1117;"></span>
+                </sc-if>
+              </div>
+            </div>
+          </sc-for>
+          <div style="display:flex; align-items:center; gap:8px; padding:calc(12px*var(--pad)) 14px; color:#5f6878; font-size:13px; background:#0e1117;">
+            <span style="width:18px; height:18px; border-radius:5px; border:1.5px dashed #2f3542; display:flex; align-items:center; justify-content:center; font-size:13px;">+</span>
+            Add set
+          </div>
+        </div>
+
+        <!-- Rest timer + notes -->
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <div style="background:#0e1117; border:1px solid #232834; border-radius:10px; padding:18px; text-align:center;">
+            <div style="color:#8a93a6; font-family:'Oswald'; font-weight:600; font-size:11px; letter-spacing:1.5px;">REST TIMER</div>
+            <div style="font-family:'Oswald'; font-weight:700; font-size:54px; color:var(--accent); text-shadow:var(--glow); line-height:1.1; letter-spacing:1px;">2:30</div>
+            <div style="display:flex; gap:8px; justify-content:center; margin-top:8px;">
+              <span style="background:#161b24; border:1px solid #2a303c; color:#aab2c2; font-size:12px; padding:7px 14px; border-radius:8px; font-family:'IBM Plex Mono';">−15s</span>
+              <span style="background:var(--accent); color:#0c0e13; font-size:12px; font-weight:700; padding:7px 18px; border-radius:8px; font-family:'Oswald'; letter-spacing:1px;">START</span>
+              <span style="background:#161b24; border:1px solid #2a303c; color:#aab2c2; font-size:12px; padding:7px 14px; border-radius:8px; font-family:'IBM Plex Mono';">+15s</span>
+            </div>
+          </div>
+          <div style="background:#0e1117; border:1px solid #232834; border-radius:10px; padding:16px; flex:1;">
+            <div style="color:#8a93a6; font-family:'Oswald'; font-weight:600; font-size:11px; letter-spacing:1.5px; margin-bottom:10px;">SESSION NOTES</div>
+            <div style="color:#c3cad6; font-size:13px; line-height:1.7;">Felt strong on the top sets — bar speed held through rep 7. Bump to 200 lb next week if RPE stays ≤ 8.5.</div>
+          </div>
+          <div style="background:color-mix(in srgb, var(--accent) 12%, #0e1117); border:1px solid color-mix(in srgb, var(--accent) 30%, #232834); border-radius:10px; padding:14px 16px; display:flex; align-items:center; justify-content:space-between;">
+            <div><div style="color:#8a93a6; font-size:10.5px; letter-spacing:1.5px; font-family:'Oswald'; font-weight:600;">SET VOLUME</div><div style="font-family:'Oswald'; font-weight:700; font-size:24px; color:#f4f6fa; line-height:1;">4,680 lb</div></div>
+            <div style="text-align:right;"><div style="color:#8a93a6; font-size:10.5px; letter-spacing:1.5px; font-family:'Oswald'; font-weight:600;">EST. 1RM</div><div style="font-family:'Oswald'; font-weight:700; font-size:24px; color:var(--accent); line-height:1;">243</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCREEN 4 : CALENDAR -->
+    <div data-screen-label="Calendar" style="width:1180px; background:#12151c; border:1px solid #232834; border-radius:16px; padding:26px 28px; box-shadow:0 30px 80px -20px rgba(0,0,0,.6);">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+        <div style="display:flex; align-items:baseline; gap:14px;">
+          <div style="font-family:'Oswald'; font-weight:700; font-size:26px; color:#f4f6fa; letter-spacing:.5px;">MARCH 2026</div>
+          <div style="display:flex; gap:6px;">
+            <span style="width:30px; height:30px; display:flex; align-items:center; justify-content:center; background:#0e1117; border:1px solid #232834; border-radius:8px; color:#aab2c2; font-size:14px;">◀</span>
+            <span style="width:30px; height:30px; display:flex; align-items:center; justify-content:center; background:#0e1117; border:1px solid #232834; border-radius:8px; color:#aab2c2; font-size:14px;">▶</span>
+          </div>
+        </div>
+        <div style="display:flex; gap:14px; align-items:center;">
+          <div style="display:flex; align-items:center; gap:6px;"><span style="width:12px; height:12px; border-radius:3px; background:color-mix(in srgb, var(--accent) 84%, #0e1117);"></span><span style="color:#8a93a6; font-size:12px; font-family:'Oswald'; letter-spacing:1px;">PULL</span></div>
+          <div style="display:flex; align-items:center; gap:6px;"><span style="width:12px; height:12px; border-radius:3px; background:color-mix(in srgb, var(--accent) 52%, #0e1117);"></span><span style="color:#8a93a6; font-size:12px; font-family:'Oswald'; letter-spacing:1px;">PUSH</span></div>
+          <div style="display:flex; align-items:center; gap:6px;"><span style="width:12px; height:12px; border-radius:3px; background:color-mix(in srgb, var(--accent) 38%, #0e1117);"></span><span style="color:#8a93a6; font-size:12px; font-family:'Oswald'; letter-spacing:1px;">LEGS</span></div>
+          <div style="display:flex; align-items:center; gap:6px;"><span style="width:12px; height:12px; border-radius:3px; background:#141821;"></span><span style="color:#8a93a6; font-size:12px; font-family:'Oswald'; letter-spacing:1px;">REST</span></div>
+        </div>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(7,1fr); gap:8px; margin-bottom:8px;">
+        <sc-for list="{{ weekdayHeads }}" as="w" hint-placeholder-count="7">
+          <div style="text-align:center; color:#5f6878; font-family:'Oswald'; font-weight:600; font-size:11px; letter-spacing:2px;">{{ w }}</div>
+        </sc-for>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(7,1fr); gap:8px;">
+        <sc-for list="{{ calCells }}" as="c" hint-placeholder-count="35">
+          <div style="height:84px; border-radius:9px; padding:8px 10px; display:flex; flex-direction:column; justify-content:space-between; background:{{ c.bg }}; border:1px solid {{ c.bd }}; box-shadow:{{ c.ring }};">
+            <span style="font-family:'Oswald'; font-weight:600; font-size:14px; color:{{ c.fg }};">{{ c.date }}</span>
+            <span style="font-family:'Oswald'; font-weight:600; font-size:11px; letter-spacing:1px; color:{{ c.fg }};">{{ c.tag }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+
+    <!-- SCREEN 5 : PROGRAM BUILDER -->
+    <div data-screen-label="Program Builder" style="width:1180px; background:#12151c; border:1px solid #232834; border-radius:16px; padding:26px 28px; box-shadow:0 30px 80px -20px rgba(0,0,0,.6);">
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:20px;">
+        <div>
+          <div style="color:var(--accent); font-family:'Oswald'; font-weight:600; letter-spacing:3px; font-size:12px;">PROGRAM BUILDER</div>
+          <div style="font-family:'Oswald'; font-weight:700; font-size:30px; color:#f4f6fa; line-height:1; margin-top:4px;">HYPERTROPHY BLOCK</div>
+        </div>
+        <div style="color:#8a93a6; font-size:13px; font-family:'IBM Plex Mono'; text-align:right;">6-week mesocycle · +2.5% load / wk · PPL ×2</div>
+      </div>
+      <div style="display:grid; grid-template-columns:190px 1fr; gap:16px;">
+        <!-- Week rail -->
+        <div style="display:flex; flex-direction:column; gap:8px;">
+          <div style="color:#5f6878; font-size:10.5px; letter-spacing:2px; font-family:'Oswald'; font-weight:600; padding:2px 4px;">WEEKS</div>
+          <sc-for list="{{ builderWeeks }}" as="w" hint-placeholder-count="6">
+            <div style="border-radius:9px; padding:11px 13px;">
+              <sc-if value="{{ w.active }}" hint-placeholder-val="{{ true }}">
+                <div style="background:color-mix(in srgb, var(--accent) 16%, #0e1117); border-left:2px solid var(--accent); border-radius:0 8px 8px 0; padding:11px 13px; margin:-11px -13px;">
+                  <div style="font-family:'Oswald'; font-weight:600; font-size:15px; color:var(--accent);">{{ w.label }}</div>
+                  <div style="color:#aab2c2; font-size:11px; font-family:'IBM Plex Mono'; margin-top:2px;">{{ w.note }}</div>
+                </div>
+              </sc-if>
+              <sc-if value="{{ w.inactive }}" hint-placeholder-val="{{ true }}">
+                <div style="background:#0e1117; border:1px solid #232834; border-radius:8px; padding:11px 13px; margin:-11px -13px;">
+                  <div style="font-family:'Oswald'; font-weight:600; font-size:15px; color:#dfe4ee;">{{ w.label }}</div>
+                  <div style="color:#5f6878; font-size:11px; font-family:'IBM Plex Mono'; margin-top:2px;">{{ w.note }}</div>
+                </div>
+              </sc-if>
+            </div>
+          </sc-for>
+        </div>
+        <!-- Day columns -->
+        <div style="display:grid; grid-template-columns:repeat(7,1fr); gap:8px;">
+          <sc-for list="{{ builderDays }}" as="day" hint-placeholder-count="7">
+            <div style="background:#0e1117; border:1px solid #232834; border-radius:10px; overflow:hidden; display:flex; flex-direction:column;">
+              <div style="padding:10px; border-bottom:1px solid #1c212b;">
+                <div style="font-family:'Oswald'; font-weight:600; font-size:11px; letter-spacing:1.5px; color:#5f6878;">{{ day.day }}</div>
+                <div style="font-family:'Oswald'; font-weight:700; font-size:14px; color:#f4f6fa;">{{ day.focus }}</div>
+              </div>
+              <div style="padding:8px; display:flex; flex-direction:column; gap:6px; flex:1;">
+                <sc-for list="{{ day.items }}" as="it" hint-placeholder-count="4">
+                  <div style="background:#161b24; border:1px solid #232834; border-left:2px solid var(--accent); border-radius:6px; padding:6px 8px; color:#c3cad6; font-size:11px; line-height:1.25;">{{ it }}</div>
+                </sc-for>
+                <sc-if value="{{ day.off }}" hint-placeholder-val="{{ true }}">
+                  <div style="color:#3a4150; font-size:11px; font-family:'IBM Plex Mono'; text-align:center; padding:16px 0;">— rest —</div>
+                </sc-if>
+                <div style="color:#5f6878; font-size:11px; font-family:'IBM Plex Mono'; padding:4px 2px;">+ add</div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCREEN 6 : EXERCISE LIBRARY -->
+    <div data-screen-label="Exercise Library" style="width:1180px; background:#12151c; border:1px solid #232834; border-radius:16px; padding:26px 28px; box-shadow:0 30px 80px -20px rgba(0,0,0,.6);">
+      <div style="font-family:'Oswald'; font-weight:700; font-size:26px; color:#f4f6fa; letter-spacing:.5px; margin-bottom:18px;">EXERCISE LIBRARY</div>
+      <div style="display:grid; grid-template-columns:1fr 1.15fr; gap:16px;">
+        <!-- List -->
+        <div>
+          <div style="display:flex; align-items:center; gap:10px; background:#0e1117; border:1px solid #2a303c; border-radius:9px; padding:10px 14px; margin-bottom:12px;">
+            <span style="color:#5f6878; font-size:15px;">⌕</span>
+            <span style="color:#5f6878; font-size:14px; font-family:'IBM Plex Mono';">Search exercises…</span>
+          </div>
+          <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:14px;">
+            <sc-for list="{{ libGroups }}" as="g" hint-placeholder-count="7">
+              <div>
+                <sc-if value="{{ g.active }}" hint-placeholder-val="{{ true }}">
+                  <span style="background:var(--accent); color:#0c0e13; font-size:11px; font-weight:700; padding:5px 12px; border-radius:20px; font-family:'Oswald'; letter-spacing:1px;">{{ g.name }}</span>
+                </sc-if>
+                <sc-if value="{{ g.inactive }}" hint-placeholder-val="{{ true }}">
+                  <span style="background:#0e1117; border:1px solid #232834; color:#aab2c2; font-size:11px; font-weight:600; padding:5px 12px; border-radius:20px; font-family:'Oswald'; letter-spacing:1px;">{{ g.name }}</span>
+                </sc-if>
+              </div>
+            </sc-for>
+          </div>
+          <div style="border:1px solid #232834; border-radius:10px; overflow:hidden;">
+            <sc-for list="{{ libExercises }}" as="ex" hint-placeholder-count="9">
+              <div style="display:flex; align-items:center; justify-content:space-between; padding:12px 15px; border-bottom:1px solid #1a1f28; border-left:2px solid {{ ex.bar }}; background:{{ ex.bg }};">
+                <div>
+                  <div style="color:#eef1f6; font-weight:600; font-size:14px;">{{ ex.name }}</div>
+                  <div style="color:#5f6878; font-size:11px; font-family:'IBM Plex Mono'; margin-top:1px;">{{ ex.group }}</div>
+                </div>
+                <span style="color:#5f6878; font-size:16px;">›</span>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+        <!-- Detail -->
+        <div style="background:#0e1117; border:1px solid #232834; border-radius:10px; padding:18px;">
+          <div style="font-family:'Oswald'; font-weight:700; font-size:22px; color:#f4f6fa; line-height:1;">Barbell Bench Press</div>
+          <div style="color:var(--accent); font-size:12px; font-family:'IBM Plex Mono'; margin-top:4px;">CHEST · TRICEPS · FRONT DELT</div>
+          <div style="width:100%; height:190px; border-radius:9px; overflow:hidden; margin:14px 0; border:1px solid #232834;">
+            <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="lib-bench" shape="rect" placeholder="Drop demo image" hint-size="100%,100%"></x-import>
+          </div>
+          <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:8px; margin-bottom:16px;">
+            <sc-for list="{{ libStats }}" as="st" hint-placeholder-count="4">
+              <div style="background:#12151c; border:1px solid #232834; border-radius:8px; padding:10px 12px;">
+                <div style="color:#5f6878; font-size:10px; letter-spacing:1.5px; font-family:'Oswald'; font-weight:600;">{{ st.k }}</div>
+                <div style="font-family:'Oswald'; font-weight:700; font-size:18px; color:#f4f6fa; line-height:1.2;">{{ st.v }}</div>
+              </div>
+            </sc-for>
+          </div>
+          <div style="color:#8a93a6; font-family:'Oswald'; font-weight:600; font-size:11px; letter-spacing:1.5px; margin-bottom:8px;">COACHING CUES</div>
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <sc-for list="{{ libCues }}" as="cue" hint-placeholder-count="4">
+              <div style="display:flex; gap:9px; align-items:flex-start;">
+                <span style="width:6px; height:6px; border-radius:2px; background:var(--accent); margin-top:6px; flex-shrink:0;"></span>
+                <span style="color:#c3cad6; font-size:13px; line-height:1.45;">{{ cue }}</span>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCREEN 7 : MEASUREMENTS -->
+    <div data-screen-label="Measurements" style="width:1180px; background:#12151c; border:1px solid #232834; border-radius:16px; padding:26px 28px; box-shadow:0 30px 80px -20px rgba(0,0,0,.6);">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:18px;">
+        <div style="font-family:'Oswald'; font-weight:700; font-size:26px; color:#f4f6fa; letter-spacing:.5px;">MEASUREMENTS</div>
+        <div style="color:#8a93a6; font-size:13px; font-family:'IBM Plex Mono';">Logged weekly · 8-week block</div>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(6,1fr); gap:10px; margin-bottom:16px;">
+        <sc-for list="{{ measures }}" as="m" hint-placeholder-count="6">
+          <div style="background:#0e1117; border:1px solid #232834; border-radius:10px; padding:14px;">
+            <div style="color:#5f6878; font-size:10px; letter-spacing:1.5px; font-family:'Oswald'; font-weight:600;">{{ m.label }}</div>
+            <div style="font-family:'Oswald'; font-weight:700; font-size:26px; color:#f4f6fa; line-height:1.1;">{{ m.val }} <span style="font-size:12px; color:#5f6878; font-weight:400;">{{ m.unit }}</span></div>
+            <div style="color:#8fe63e; font-size:12px; font-weight:600; margin-top:2px;">{{ m.delta }}</div>
+          </div>
+        </sc-for>
+      </div>
+      <div style="display:grid; grid-template-columns:1.3fr 1fr; gap:14px;">
+        <div style="background:#0e1117; border:1px solid #232834; border-radius:10px; padding:18px;">
+          <div style="color:#8a93a6; font-family:'Oswald'; font-weight:600; font-size:11px; letter-spacing:1.5px; margin-bottom:16px;">BODYWEIGHT TREND (LB)</div>
+          <div style="display:flex; align-items:flex-end; gap:12px; height:150px;">
+            <sc-for list="{{ weightTrend }}" as="t" hint-placeholder-count="8">
+              <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:8px; justify-content:flex-end; height:100%;">
+                <div style="width:100%; background:var(--accent); box-shadow:var(--glow); border-radius:5px 5px 0 0; height:{{ t.h }};"></div>
+                <span style="color:#5f6878; font-size:10px; font-family:'Oswald'; letter-spacing:.5px;">{{ t.label }}</span>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+        <div style="background:#0e1117; border:1px solid #232834; border-radius:10px; overflow:hidden;">
+          <div style="display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr 1fr; background:#12151c; border-bottom:1px solid #232834;">
+            <div style="padding:11px 14px; color:#8a93a6; font-family:'Oswald'; font-weight:600; font-size:10.5px; letter-spacing:1.5px;">METRIC</div>
+            <sc-for list="{{ measureCols }}" as="col" hint-placeholder-count="4">
+              <div style="padding:11px 6px; color:#8a93a6; font-family:'Oswald'; font-weight:600; font-size:10.5px; letter-spacing:1px; text-align:center;">{{ col }}</div>
+            </sc-for>
+          </div>
+          <sc-for list="{{ measureRows }}" as="r" hint-placeholder-count="5">
+            <div style="display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr 1fr; border-bottom:1px solid #1a1f28; align-items:center;">
+              <div style="padding:11px 14px; color:#dfe4ee; font-size:13px; font-weight:500;">{{ r.part }}</div>
+              <sc-for list="{{ r.c }}" as="val" hint-placeholder-count="4">
+                <div style="padding:11px 6px; text-align:center; font-family:'IBM Plex Mono'; color:#aab2c2; font-size:13px;">{{ val }}</div>
+              </sc-for>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCREEN 8 : PROGRESS PHOTOS -->
+    <div data-screen-label="Progress Photos" style="width:1180px; background:#12151c; border:1px solid #232834; border-radius:16px; padding:26px 28px; box-shadow:0 30px 80px -20px rgba(0,0,0,.6);">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:18px;">
+        <div style="font-family:'Oswald'; font-weight:700; font-size:26px; color:#f4f6fa; letter-spacing:.5px;">PROGRESS PHOTOS</div>
+        <div style="display:flex; gap:6px;">
+          <span style="background:color-mix(in srgb, var(--accent) 16%, #0e1117); color:var(--accent); font-size:11px; font-weight:600; padding:6px 14px; border-radius:6px; font-family:'Oswald'; letter-spacing:1px;">COMPARE</span>
+          <span style="background:#0e1117; border:1px solid #232834; color:#8a93a6; font-size:11px; font-weight:600; padding:6px 14px; border-radius:6px; font-family:'Oswald'; letter-spacing:1px;">GRID</span>
+        </div>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:16px;">
+        <div>
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;"><span style="color:#8a93a6; font-family:'Oswald'; font-weight:600; font-size:12px; letter-spacing:1.5px;">BEFORE</span><span style="color:#5f6878; font-size:12px; font-family:'IBM Plex Mono';">Week 1 · 193.0 lb</span></div>
+          <div style="width:100%; height:340px; border-radius:11px; overflow:hidden; border:1px solid #232834;">
+            <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="ph-before" shape="rect" placeholder="Drop week-1 photo" hint-size="100%,100%"></x-import>
+          </div>
+        </div>
+        <div>
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;"><span style="color:var(--accent); font-family:'Oswald'; font-weight:600; font-size:12px; letter-spacing:1.5px;">AFTER</span><span style="color:#5f6878; font-size:12px; font-family:'IBM Plex Mono';">Week 8 · 183.5 lb</span></div>
+          <div style="width:100%; height:340px; border-radius:11px; overflow:hidden; border:1px solid color-mix(in srgb, var(--accent) 40%, #232834);">
+            <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="ph-after" shape="rect" placeholder="Drop week-8 photo" hint-size="100%,100%"></x-import>
+          </div>
+        </div>
+      </div>
+      <div style="color:#8a93a6; font-family:'Oswald'; font-weight:600; font-size:11px; letter-spacing:1.5px; margin-bottom:10px;">TIMELINE</div>
+      <div style="display:grid; grid-template-columns:repeat(5,1fr); gap:10px;">
+        <sc-for list="{{ photoStrip }}" as="p" hint-placeholder-count="5">
+          <div>
+            <div style="width:100%; height:150px; border-radius:9px; overflow:hidden; border:1px solid #232834;">
+              <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="{{ p.id }}" shape="rect" placeholder="Add" hint-size="100%,100%"></x-import>
+            </div>
+            <div style="text-align:center; color:#5f6878; font-size:11px; font-family:'Oswald'; letter-spacing:1px; margin-top:6px;">{{ p.date }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DIRECTION B : NEAR-BLACK + AMBER, MONO ============ -->
+  <section id="1b" style="display:flex; flex-direction:column; gap:28px;">
+    <div style="display:flex; align-items:center; gap:14px;">
+      <span style="background:var(--accent); color:#0a0a0a; font-family:'Bebas Neue'; font-size:18px; letter-spacing:1px; padding:5px 13px; border-radius:5px; line-height:1;">1B</span>
+      <span style="color:#7d7468; font-family:'Bebas Neue'; letter-spacing:3px; font-size:16px; text-transform:uppercase;">Carbon · Amber — "Coach Console"</span>
+    </div>
+
+    <!-- SCREEN 1 : WEEKLY LOG -->
+    <div style="width:1180px; background:#111110; border:1px solid #26241f; border-radius:14px; overflow:hidden; box-shadow:0 30px 80px -20px rgba(0,0,0,.7); display:flex;">
+      <aside style="width:210px; background:#0a0a09; border-right:1px solid #26241f; padding:22px 0; flex-shrink:0;">
+        <div style="padding:0 20px 18px; border-bottom:1px solid #1c1b17;">
+          <div style="font-family:'Bebas Neue'; font-size:28px; color:#f5f1e8; letter-spacing:1.5px; line-height:.9;">COACH<br><span style="color:var(--accent);">CONSOLE</span></div>
+          <div style="color:#6b6459; font-size:10px; letter-spacing:3px; margin-top:6px; font-family:'IBM Plex Mono';">v2.4 · PT SUITE</div>
+        </div>
+        <nav style="padding:14px 12px; display:flex; flex-direction:column; gap:2px;">
+          <div style="color:#6b6459; font-size:10px; letter-spacing:2px; font-family:'IBM Plex Mono'; padding:8px 10px 5px;">// WORKOUT</div>
+          <div style="padding:9px 12px; border-radius:6px; background:color-mix(in srgb, var(--accent) 16%, #0a0a09); color:var(--accent); font-weight:600; font-size:13px; font-family:'Barlow Semi Condensed'; letter-spacing:.5px;">Weekly Planner</div>
+          <div style="padding:9px 12px; border-radius:6px; color:#a8a094; font-size:13px; font-family:'Barlow Semi Condensed';">Log Entry</div>
+          <div style="padding:9px 12px; border-radius:6px; color:#a8a094; font-size:13px; font-family:'Barlow Semi Condensed';">Calendar</div>
+          <div style="padding:9px 12px; border-radius:6px; color:#a8a094; font-size:13px; font-family:'Barlow Semi Condensed';">Dashboard</div>
+          <div style="color:#6b6459; font-size:10px; letter-spacing:2px; font-family:'IBM Plex Mono'; padding:14px 10px 5px;">// BUILDER</div>
+          <div style="padding:9px 12px; border-radius:6px; color:#a8a094; font-size:13px; font-family:'Barlow Semi Condensed';">Program Builder</div>
+          <div style="padding:9px 12px; border-radius:6px; color:#a8a094; font-size:13px; font-family:'Barlow Semi Condensed';">Exercise Library</div>
+          <div style="color:#6b6459; font-size:10px; letter-spacing:2px; font-family:'IBM Plex Mono'; padding:14px 10px 5px;">// CLIENT</div>
+          <div style="padding:9px 12px; border-radius:6px; color:#a8a094; font-size:13px; font-family:'Barlow Semi Condensed';">Measurements</div>
+          <div style="padding:9px 12px; border-radius:6px; color:#a8a094; font-size:13px; font-family:'Barlow Semi Condensed';">Progress Photos</div>
+        </nav>
+      </aside>
+
+      <div style="flex:1; padding:26px 28px; min-width:0;">
+        <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:22px;">
+          <div>
+            <div style="color:var(--accent); font-family:'IBM Plex Mono'; font-size:11px; letter-spacing:2px;">PPL · MESOCYCLE 2</div>
+            <div style="font-family:'Bebas Neue'; font-size:46px; color:#f5f1e8; line-height:.9; margin-top:6px; letter-spacing:1px;">WEEK 01 <span style="color:#6b6459; font-size:26px;">/ 06</span></div>
+          </div>
+          <div style="text-align:right;">
+            <div style="color:#a8a094; font-size:12px; font-family:'IBM Plex Mono'; letter-spacing:1px;">CLIENT · MARCUS_T</div>
+            <div style="color:#f5f1e8; font-family:'Barlow Semi Condensed'; font-weight:600; font-size:16px; margin-top:3px;">Mon Mar 30 → Apr 5</div>
+          </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-bottom:20px;">
+          <div style="background:#0a0a09; border:1px solid #26241f; border-radius:8px; padding:13px 15px;"><div style="color:#6b6459; font-size:10px; letter-spacing:1px; font-family:'IBM Plex Mono';">TRAINING DAYS</div><div style="font-family:'Bebas Neue'; font-size:32px; color:#f5f1e8; line-height:1;">6<span style="color:#6b6459; font-size:16px;">/7</span></div></div>
+          <div style="background:#0a0a09; border:1px solid #26241f; border-radius:8px; padding:13px 15px;"><div style="color:#6b6459; font-size:10px; letter-spacing:1px; font-family:'IBM Plex Mono';">SESSIONS DONE</div><div style="font-family:'Bebas Neue'; font-size:32px; color:var(--accent); line-height:1;">4<span style="color:#6b6459; font-size:16px;">/6</span></div></div>
+          <div style="background:#0a0a09; border:1px solid #26241f; border-radius:8px; padding:13px 15px;"><div style="color:#6b6459; font-size:10px; letter-spacing:1px; font-family:'IBM Plex Mono';">VOLUME</div><div style="font-family:'Bebas Neue'; font-size:32px; color:#f5f1e8; line-height:1;">42.6k</div></div>
+          <div style="background:#0a0a09; border:1px solid #26241f; border-radius:8px; padding:13px 15px;"><div style="color:#6b6459; font-size:10px; letter-spacing:1px; font-family:'IBM Plex Mono';">COMPLETION</div><div style="font-family:'Bebas Neue'; font-size:32px; color:#f5f1e8; line-height:1;">67%</div></div>
+        </div>
+
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+          <div style="display:flex; align-items:center; gap:12px;">
+            <span style="font-family:'Bebas Neue'; font-size:22px; color:#f5f1e8; letter-spacing:1px;">TODAY — PULL A</span>
+            <span style="border:1px solid color-mix(in srgb, var(--accent) 45%, #26241f); color:var(--accent); font-size:10px; font-weight:600; padding:3px 9px; border-radius:4px; font-family:'IBM Plex Mono'; letter-spacing:1px;">BACK · BICEPS</span>
+          </div>
+          <span style="color:#6b6459; font-size:11px; font-family:'IBM Plex Mono';">EST 58MIN · RPE≤9</span>
+        </div>
+
+        <div style="border:1px solid #26241f; border-radius:8px; overflow:hidden;">
+          <div style="display:grid; grid-template-columns:2.4fr .9fr .8fr .9fr .8fr .7fr; background:#0a0a09; border-bottom:1px solid #26241f;">
+            <div style="padding:9px 16px; color:#8a8172; font-family:'IBM Plex Mono'; font-size:10.5px; letter-spacing:1px;">EXERCISE</div>
+            <div style="padding:9px 12px; color:#8a8172; font-family:'IBM Plex Mono'; font-size:10.5px; letter-spacing:1px; text-align:center;">WT</div>
+            <div style="padding:9px 12px; color:#8a8172; font-family:'IBM Plex Mono'; font-size:10.5px; letter-spacing:1px; text-align:center;">SETS</div>
+            <div style="padding:9px 12px; color:#8a8172; font-family:'IBM Plex Mono'; font-size:10.5px; letter-spacing:1px; text-align:center;">REPS</div>
+            <div style="padding:9px 12px; color:#8a8172; font-family:'IBM Plex Mono'; font-size:10.5px; letter-spacing:1px; text-align:center;">RPE</div>
+            <div style="padding:9px 12px; color:#8a8172; font-family:'IBM Plex Mono'; font-size:10.5px; letter-spacing:1px; text-align:center;">✓</div>
+          </div>
+          <sc-for list="{{ exercises }}" as="ex" hint-placeholder-count="6">
+            <div style="display:grid; grid-template-columns:2.4fr .9fr .8fr .9fr .8fr .7fr; border-bottom:1px solid #1a1915; align-items:center;">
+              <div style="padding:calc(10px*var(--pad)) 16px; display:flex; flex-direction:column;">
+                <span style="color:#f0ece2; font-family:'Barlow Semi Condensed'; font-weight:600; font-size:14px;">{{ ex.name }}</span>
+                <span style="color:#6b6459; font-size:10.5px; font-family:'IBM Plex Mono';">{{ ex.target }}</span>
+              </div>
+              <div style="padding:calc(10px*var(--pad)) 12px; text-align:center; font-family:'IBM Plex Mono'; color:#dcd6c9; font-size:13px; font-weight:500;">{{ ex.weight }}</div>
+              <div style="padding:calc(10px*var(--pad)) 12px; text-align:center; font-family:'IBM Plex Mono'; color:#dcd6c9; font-size:13px;">{{ ex.sets }}</div>
+              <div style="padding:calc(10px*var(--pad)) 12px; text-align:center; font-family:'IBM Plex Mono'; color:#dcd6c9; font-size:13px;">{{ ex.reps }}</div>
+              <div style="padding:calc(10px*var(--pad)) 12px; text-align:center; font-family:'IBM Plex Mono'; color:var(--accent); font-size:13px;">{{ ex.rpe }}</div>
+              <div style="padding:calc(10px*var(--pad)) 12px; display:flex; justify-content:center;">
+                <sc-if value="{{ ex.done }}" hint-placeholder-val="{{ true }}">
+                  <span style="width:19px; height:19px; border-radius:4px; background:var(--accent); box-shadow:var(--glow); color:#0a0a09; display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:700;">✓</span>
+                </sc-if>
+                <sc-if value="{{ ex.notDone }}" hint-placeholder-val="{{ true }}">
+                  <span style="width:19px; height:19px; border-radius:4px; border:1.5px solid #37332a; background:#0a0a09;"></span>
+                </sc-if>
+              </div>
+            </div>
+          </sc-for>
+          <div style="display:flex; align-items:center; gap:8px; padding:calc(10px*var(--pad)) 16px; color:#6b6459; font-size:12px; background:#0a0a09; font-family:'IBM Plex Mono';">[ + ] ADD EXERCISE</div>
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1.4fr; gap:12px; margin-top:18px;">
+          <div style="background:#0a0a09; border:1px solid #26241f; border-radius:8px; padding:16px;">
+            <div style="color:#8a8172; font-family:'IBM Plex Mono'; font-size:10.5px; letter-spacing:1px; margin-bottom:12px;">BODYWEIGHT</div>
+            <div style="display:flex; align-items:flex-end; gap:16px;">
+              <div><div style="color:#6b6459; font-size:10px; font-family:'IBM Plex Mono';">CURRENT</div><div style="font-family:'Bebas Neue'; font-size:30px; color:#f5f1e8; line-height:1;">183.5</div></div>
+              <div><div style="color:#6b6459; font-size:10px; font-family:'IBM Plex Mono';">TARGET</div><div style="font-family:'Bebas Neue'; font-size:30px; color:var(--accent); line-height:1;">170</div></div>
+              <div style="margin-left:auto; text-align:right;"><div style="color:#6b6459; font-size:10px; font-family:'IBM Plex Mono';">7-DAY</div><div style="font-family:'Bebas Neue'; font-size:20px; color:#e0a04a; line-height:1;">▼1.2</div></div>
+            </div>
+          </div>
+          <div style="background:#0a0a09; border:1px solid #26241f; border-radius:8px; padding:16px;">
+            <div style="color:#8a8172; font-family:'IBM Plex Mono'; font-size:10.5px; letter-spacing:1px; margin-bottom:12px;">DAILY PROGRESS</div>
+            <div style="display:flex; align-items:flex-end; gap:14px; height:74px;">
+              <sc-for list="{{ days }}" as="d" hint-placeholder-count="6">
+                <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:6px; justify-content:flex-end; height:100%;">
+                  <div style="width:100%; background:#1c1b16; border-radius:3px; display:flex; align-items:flex-end; overflow:hidden; height:52px;">
+                    <div style="width:100%; background:var(--accent); box-shadow:var(--glow); border-radius:3px 3px 0 0; height:{{ d.h }};"></div>
+                  </div>
+                  <span style="color:#6b6459; font-size:9.5px; font-family:'IBM Plex Mono';">{{ d.label }}</span>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCREEN 2 : PROGRESS DASHBOARD (B) -->
+    <div style="width:1180px; background:#111110; border:1px solid #26241f; border-radius:14px; padding:26px 28px; box-shadow:0 30px 80px -20px rgba(0,0,0,.7);">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+        <div style="font-family:'Bebas Neue'; font-size:32px; color:#f5f1e8; letter-spacing:1.5px;">PROGRESS DASHBOARD</div>
+        <div style="display:flex; gap:6px;">
+          <span style="background:color-mix(in srgb, var(--accent) 16%, #0a0a09); color:var(--accent); font-size:10px; font-weight:600; padding:5px 12px; border-radius:5px; font-family:'IBM Plex Mono'; letter-spacing:1px;">8WK</span>
+          <span style="background:#0a0a09; color:#8a8172; font-size:10px; padding:5px 12px; border-radius:5px; font-family:'IBM Plex Mono'; letter-spacing:1px; border:1px solid #26241f;">12WK</span>
+          <span style="background:#0a0a09; color:#8a8172; font-size:10px; padding:5px 12px; border-radius:5px; font-family:'IBM Plex Mono'; letter-spacing:1px; border:1px solid #26241f;">ALL</span>
+        </div>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-bottom:14px;">
+        <div style="background:#0a0a09; border:1px solid #26241f; border-radius:8px; padding:15px;"><div style="color:#6b6459; font-size:10px; letter-spacing:1px; font-family:'IBM Plex Mono';">TOTAL VOLUME</div><div style="font-family:'Bebas Neue'; font-size:34px; color:#f5f1e8;">318k</div><div style="color:#e0a04a; font-size:11px; font-family:'IBM Plex Mono';">▲14% BLOCK</div></div>
+        <div style="background:#0a0a09; border:1px solid #26241f; border-radius:8px; padding:15px;"><div style="color:#6b6459; font-size:10px; letter-spacing:1px; font-family:'IBM Plex Mono';">SESSIONS</div><div style="font-family:'Bebas Neue'; font-size:34px; color:#f5f1e8;">41</div><div style="color:#e0a04a; font-size:11px; font-family:'IBM Plex Mono';">92% ADHERENCE</div></div>
+        <div style="background:#0a0a09; border:1px solid #26241f; border-radius:8px; padding:15px;"><div style="color:#6b6459; font-size:10px; letter-spacing:1px; font-family:'IBM Plex Mono';">1RM · BENCH</div><div style="font-family:'Bebas Neue'; font-size:34px; color:var(--accent);">245</div><div style="color:#e0a04a; font-size:11px; font-family:'IBM Plex Mono';">▲20 LBS</div></div>
+        <div style="background:#0a0a09; border:1px solid #26241f; border-radius:8px; padding:15px;"><div style="color:#6b6459; font-size:10px; letter-spacing:1px; font-family:'IBM Plex Mono';">BODYWEIGHT</div><div style="font-family:'Bebas Neue'; font-size:34px; color:#f5f1e8;">183.5</div><div style="color:#e0a04a; font-size:11px; font-family:'IBM Plex Mono';">▼9.5 LBS</div></div>
+      </div>
+      <div style="display:grid; grid-template-columns:1.6fr 1fr; gap:12px;">
+        <div style="background:#0a0a09; border:1px solid #26241f; border-radius:8px; padding:18px;">
+          <div style="color:#8a8172; font-family:'IBM Plex Mono'; font-size:10.5px; letter-spacing:1px; margin-bottom:16px;">WEEKLY TRAINING VOLUME (LBS)</div>
+          <div style="display:flex; align-items:flex-end; gap:12px; height:150px;">
+            <sc-for list="{{ volume }}" as="v" hint-placeholder-count="8">
+              <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:8px; justify-content:flex-end; height:100%;">
+                <div style="width:100%; background:{{ v.shade }}; box-shadow:var(--glow); border-radius:3px 3px 0 0; height:{{ v.h }};"></div>
+                <span style="color:#6b6459; font-size:9.5px; font-family:'IBM Plex Mono';">{{ v.label }}</span>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+        <div style="background:#0a0a09; border:1px solid #26241f; border-radius:8px; padding:18px;">
+          <div style="color:#8a8172; font-family:'IBM Plex Mono'; font-size:10.5px; letter-spacing:1px; margin-bottom:14px;">TOP LIFTS — EST. 1RM</div>
+          <sc-for list="{{ lifts }}" as="l" hint-placeholder-count="4">
+            <div style="margin-bottom:14px;">
+              <div style="display:flex; justify-content:space-between; margin-bottom:6px;"><span style="color:#dcd6c9; font-size:13px; font-family:'Barlow Semi Condensed'; font-weight:600;">{{ l.name }}</span><span style="font-family:'IBM Plex Mono'; color:var(--accent); font-size:12px;">{{ l.val }}</span></div>
+              <div style="height:7px; background:#1c1b16; border-radius:3px; overflow:hidden;"><div style="height:100%; background:var(--accent); box-shadow:var(--glow); width:{{ l.pct }};"></div></div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1400,&quot;height&quot;:1200},&quot;accent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#b6f24a&quot;,&quot;options&quot;:[&quot;#b6f24a&quot;,&quot;#ff8a3d&quot;,&quot;#3d9bff&quot;,&quot;#b45cff&quot;,&quot;#ff4d4d&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Feel&quot;,&quot;label&quot;:&quot;Accent&quot;},&quot;density&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;Roomy&quot;,&quot;options&quot;:[&quot;Compact&quot;,&quot;Standard&quot;,&quot;Roomy&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Feel&quot;,&quot;label&quot;:&quot;Log density&quot;},&quot;energy&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;Charged&quot;,&quot;options&quot;:[&quot;Focused&quot;,&quot;Charged&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Feel&quot;,&quot;label&quot;:&quot;Energy&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const accent = this.props.accent ?? '#b6f24a';
+    const density = this.props.density ?? 'Standard';
+    const energy = this.props.energy ?? 'Focused';
+    const pad = density === 'Compact' ? 0.6 : density === 'Roomy' ? 1.45 : 1;
+    const glow = energy === 'Charged'
+      ? `0 0 18px ${accent}80, 0 0 5px ${accent}`
+      : 'none';
+
+    const exercises = [
+      { name: 'Deadlift', target: 'Posterior chain', weight: '315 lb', sets: '4', reps: '5', rpe: '8', done: true, notDone: false },
+      { name: 'Weighted Pull-Up', target: 'Lats · +45 lb', weight: '+45 lb', sets: '4', reps: '6-8', rpe: '9', done: true, notDone: false },
+      { name: 'Barbell Row', target: 'Mid-back', weight: '185 lb', sets: '3', reps: '8-10', rpe: '8', done: true, notDone: false },
+      { name: 'Seated Cable Row', target: 'Rhomboids', weight: '160 lb', sets: '3', reps: '10-12', rpe: '—', done: false, notDone: true },
+      { name: 'Face Pull', target: 'Rear delts', weight: '50 lb', sets: '3', reps: '15', rpe: '—', done: false, notDone: true },
+      { name: 'Incline DB Curl', target: 'Biceps', weight: '35 lb', sets: '3', reps: '10-12', rpe: '—', done: false, notDone: true },
+      { name: 'Hammer Curl', target: 'Brachialis', weight: '30 lb', sets: '3', reps: '12', rpe: '—', done: false, notDone: true },
+    ];
+    const days = [
+      { label: 'MON', h: '82%' }, { label: 'TUE', h: '95%' }, { label: 'WED', h: '48%' },
+      { label: 'THU', h: '88%' }, { label: 'FRI', h: '70%' }, { label: 'SAT', h: '30%' },
+    ];
+    const volH = ['48%','58%','54%','40%','68%','78%','72%','92%'];
+    const volMix = [30,42,48,38,66,82,74,100];
+    const volLabels = ['W1','W2','W3','W4','W5','W6','W7','W8'];
+    const volume = volLabels.map((label, i) => ({
+      label,
+      h: volH[i],
+      shade: `color-mix(in srgb, ${accent} ${volMix[i]}%, #14140f)`,
+    }));
+    const lifts = [
+      { name: 'Deadlift', val: '405 lb', pct: '100%' },
+      { name: 'Squat', val: '335 lb', pct: '82%' },
+      { name: 'Bench Press', val: '245 lb', pct: '60%' },
+      { name: 'Overhead Press', val: '155 lb', pct: '38%' },
+    ];
+    // ---- LOG ENTRY (set-by-set) ----
+    const setRows = [
+      { set: 'W1', prev: '—', weight: '45', reps: '12', rpe: '—', warm: true, done: true, pending: false },
+      { set: 'W2', prev: '—', weight: '95', reps: '8', rpe: '—', warm: true, done: true, pending: false },
+      { set: '1', prev: '185 × 8', weight: '195', reps: '8', rpe: '8.0', warm: false, done: true, pending: false },
+      { set: '2', prev: '185 × 8', weight: '195', reps: '8', rpe: '8.5', warm: false, done: true, pending: false },
+      { set: '3', prev: '185 × 7', weight: '195', reps: '7', rpe: '9.0', warm: false, done: false, pending: true },
+      { set: '4', prev: '185 × 6', weight: '195', reps: '—', rpe: '—', warm: false, done: false, pending: true },
+    ].map(s => ({ ...s, working: !s.warm }));
+
+    // ---- CALENDAR (month) ----
+    const plan = [
+      { t: 'PUSH', m: 52 }, { t: 'PULL', m: 84 }, { t: 'LEGS', m: 38 },
+      { t: 'PUSH', m: 52 }, { t: 'PULL', m: 84 }, { t: 'CARDIO', m: 22 }, { t: 'REST', m: 0 },
+    ];
+    const calCells = [
+      { date: 29, muted: true, tag: '', bg: 'transparent', fg: '#3a4150', today: false },
+      { date: 30, muted: true, tag: '', bg: 'transparent', fg: '#3a4150', today: false },
+    ];
+    for (let d = 1; d <= 31; d++) {
+      const p = plan[(d + 1) % 7];
+      calCells.push({
+        date: d,
+        muted: false,
+        today: d === 12,
+        tag: p.t,
+        bg: p.m === 0 ? '#141821' : `color-mix(in srgb, ${accent} ${p.m}%, #0e1117)`,
+        fg: p.m === 0 ? '#5f6878' : (p.m >= 70 ? '#0c0e13' : '#dfe4ee'),
+      });
+    }
+    calCells.push(
+      { date: 1, muted: true, tag: '', bg: 'transparent', fg: '#3a4150', today: false },
+      { date: 2, muted: true, tag: '', bg: 'transparent', fg: '#3a4150', today: false },
+    );
+    calCells.forEach(c => { c.bd = c.today ? accent : '#1a1f28'; c.ring = c.today ? `inset 0 0 0 2px ${accent}` : 'none'; });
+    const weekdayHeads = ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'];
+
+    // ---- PROGRAM BUILDER ----
+    const builderDays = [
+      { day: 'MON', focus: 'PUSH A', off: false, items: ['Bench Press', 'Overhead Press', 'Incline DB Press', 'Lateral Raise', 'Triceps Rope'] },
+      { day: 'TUE', focus: 'PULL A', off: false, items: ['Deadlift', 'Weighted Pull-Up', 'Barbell Row', 'Face Pull', 'DB Curl'] },
+      { day: 'WED', focus: 'LEGS A', off: false, items: ['Back Squat', 'Romanian DL', 'Leg Press', 'Leg Curl', 'Calf Raise'] },
+      { day: 'THU', focus: 'PUSH B', off: false, items: ['Incline Bench', 'Arnold Press', 'Cable Fly', 'Lateral Raise', 'Skullcrusher'] },
+      { day: 'FRI', focus: 'PULL B', off: false, items: ['Rack Pull', 'Chin-Up', 'Chest-Supported Row', 'Rear Delt Fly', 'Hammer Curl'] },
+      { day: 'SAT', focus: 'LEGS B', off: false, items: ['Front Squat', 'Hip Thrust', 'Walking Lunge', 'Leg Extension', 'Seated Calf'] },
+      { day: 'SUN', focus: 'REST', off: true, items: [] },
+    ];
+    const builderWeeks = [
+      { label: 'Week 1', note: 'Accumulation', active: false },
+      { label: 'Week 2', note: 'Accumulation', active: false },
+      { label: 'Week 3', note: 'Intensification', active: true },
+      { label: 'Week 4', note: 'Intensification', active: false },
+      { label: 'Week 5', note: 'Peak', active: false },
+      { label: 'Week 6', note: 'Deload', active: false },
+    ].map(w => ({ ...w, inactive: !w.active }));
+
+    // ---- EXERCISE LIBRARY ----
+    const libGroups = [
+      { name: 'All', active: true }, { name: 'Chest', active: false }, { name: 'Back', active: false },
+      { name: 'Legs', active: false }, { name: 'Shoulders', active: false }, { name: 'Arms', active: false }, { name: 'Core', active: false },
+    ].map(g => ({ ...g, inactive: !g.active }));
+    const libExercises = [
+      { name: 'Barbell Bench Press', group: 'Chest · Barbell', sel: true },
+      { name: 'Back Squat', group: 'Quads · Barbell', sel: false },
+      { name: 'Conventional Deadlift', group: 'Back · Barbell', sel: false },
+      { name: 'Weighted Pull-Up', group: 'Back · Bodyweight', sel: false },
+      { name: 'Overhead Press', group: 'Shoulders · Barbell', sel: false },
+      { name: 'Romanian Deadlift', group: 'Hamstrings · Barbell', sel: false },
+      { name: 'Incline DB Press', group: 'Chest · Dumbbell', sel: false },
+      { name: 'Barbell Row', group: 'Back · Barbell', sel: false },
+      { name: 'Leg Press', group: 'Quads · Machine', sel: false },
+    ].map(e => ({
+      ...e,
+      bg: e.sel ? `color-mix(in srgb, ${accent} 14%, #0e1117)` : 'transparent',
+      bar: e.sel ? accent : 'transparent',
+    }));
+    const libCues = [
+      'Retract & depress the scapula — pin the shoulders into the bench.',
+      'Lower the bar to the sternum, elbows tucked to ~45°.',
+      'Drive the feet into the floor and press in a slight backward arc.',
+      'Keep wrists stacked over the elbows through lockout.',
+    ];
+    const libStats = [
+      { k: 'EST. 1RM', v: '245 lb' }, { k: 'BEST SET', v: '215 × 5' },
+      { k: 'LAST DONE', v: '3 days ago' }, { k: 'CATEGORY', v: 'Compound' },
+    ];
+
+    // ---- MEASUREMENTS ----
+    const measures = [
+      { label: 'WEIGHT', val: '183.5', unit: 'lb', delta: '▼ 9.5' },
+      { label: 'BODY FAT', val: '14.2', unit: '%', delta: '▼ 3.1' },
+      { label: 'WAIST', val: '32.5', unit: 'in', delta: '▼ 1.5' },
+      { label: 'CHEST', val: '44.0', unit: 'in', delta: '▲ 0.8' },
+      { label: 'ARMS', val: '16.2', unit: 'in', delta: '▲ 0.6' },
+      { label: 'THIGHS', val: '24.5', unit: 'in', delta: '▲ 0.4' },
+    ];
+    const measureCols = ['WK 1', 'WK 4', 'WK 8', 'NOW'];
+    const measureRows = [
+      { part: 'Weight (lb)', c: ['193.0', '189.4', '186.2', '183.5'] },
+      { part: 'Body fat (%)', c: ['17.3', '16.1', '15.0', '14.2'] },
+      { part: 'Waist (in)', c: ['34.0', '33.4', '33.0', '32.5'] },
+      { part: 'Chest (in)', c: ['43.2', '43.5', '43.8', '44.0'] },
+      { part: 'Arms (in)', c: ['15.6', '15.8', '16.0', '16.2'] },
+    ];
+    const weightTrend = [
+      { label: 'W1', h: '96%' }, { label: 'W2', h: '88%' }, { label: 'W3', h: '80%' }, { label: 'W4', h: '72%' },
+      { label: 'W5', h: '66%' }, { label: 'W6', h: '54%' }, { label: 'W7', h: '44%' }, { label: 'W8', h: '36%' },
+    ];
+
+    // ---- PROGRESS PHOTOS ----
+    const photoStrip = [
+      { id: 'ph-w1', date: 'WEEK 1' }, { id: 'ph-w3', date: 'WEEK 3' }, { id: 'ph-w5', date: 'WEEK 5' },
+      { id: 'ph-w6', date: 'WEEK 6' }, { id: 'ph-w8', date: 'WEEK 8' },
+    ];
+
+    return {
+      accent, pad, glow, exercises, days, volume, lifts,
+      setRows, calCells, weekdayHeads, builderDays, builderWeeks,
+      libGroups, libExercises, libCues, libStats,
+      measures, measureCols, measureRows, weightTrend, photoStrip,
+    };
+  }
+}
+</script>
+</body>
+</html>
